@@ -1,0 +1,282 @@
+{
+    "recettes": [
+      {
+        "nom": "Malatang",
+        "cuisine": "Chinoise",
+        "ingredients": [
+          "brochettes de viande",
+          "légumes",
+          "bouillon épicé"
+        ],
+        "preparation": "Cuire les brochettes de viande et les légumes dans un bouillon épicé."
+      },
+      {
+        "nom": "Ravioli",
+        "cuisine": "Chinoise",
+        "ingredients": [
+          "pâte",
+          "viande",
+          "légumes",
+          "fruits de mer"
+        ],
+        "preparation": "Farcir les pâtes avec la viande, les légumes ou les fruits de mer puis cuire à la vapeur."
+      },
+      {
+        "nom": "Dim sum",
+        "cuisine": "Chinoise",
+        "ingredients": [
+          "pâte",
+          "viande",
+          "crevettes",
+          "légumes"
+        ],
+        "preparation": "Préparer des petits plats variés et les cuire à la vapeur ou les frire."
+      },
+      {
+        "nom": "Xiaolongbao",
+        "cuisine": "Chinoise",
+        "region": "Shanghai",
+        "ingredients": [
+          "pâte",
+          "viande de porc",
+          "soupe"
+        ],
+        "preparation": "Préparer les raviolis farcis de soupe et cuire à la vapeur."
+      },
+      {
+        "nom": "Hongshaorou",
+        "cuisine": "Chinoise",
+        "ingredients": [
+          "porc",
+          "sauce soja",
+          "sucre",
+          "épices"
+        ],
+        "preparation": "Faire braiser le porc avec la sauce soja, le sucre et les épices."
+      },
+      {
+        "nom": "Lanliaoshaorou",
+        "cuisine": "Chinoise",
+        "ingredients": [
+          "agneau",
+          "porc",
+          "épices"
+        ],
+        "preparation": "Griller les brochettes de viande et les assaisonner avec des épices."
+      },
+      {
+        "nom": "Pierogi",
+        "cuisine": "Polonaise",
+        "ingredients": [
+          "pâte",
+          "pommes de terre",
+          "fromage",
+          "viande"
+        ],
+        "preparation": "Farcir la pâte avec les ingrédients, puis cuire à l'eau ou frire."
+      },
+      {
+        "nom": "Rosol",
+        "cuisine": "Polonaise",
+        "ingredients": [
+          "poulet",
+          "bouillon",
+          "nouilles"
+        ],
+        "preparation": "Cuire le poulet dans un bouillon puis servir avec des nouilles."
+      },
+      {
+        "nom": "Barszcz",
+        "cuisine": "Polonaise",
+        "ingredients": [
+          "betteraves",
+          "légumes",
+          "bouillon"
+        ],
+        "preparation": "Préparer une soupe avec des betteraves et des légumes, à servir chaude ou froide."
+      },
+      {
+        "nom": "Poulet Tikka Masala",
+        "cuisine": "Indienne",
+        "ingredients": [
+          "poulet",
+          "épices",
+          "tomates",
+          "crème"
+        ],
+        "preparation": "Faire mariner le poulet dans les épices, puis cuire dans une sauce tomate crémeuse."
+      },
+      {
+        "nom": "Butter Chicken",
+        "cuisine": "Indienne",
+        "ingredients": [
+          "poulet",
+          "beurre",
+          "épices",
+          "tomates"
+        ],
+        "preparation": "Faire cuire le poulet dans une sauce au beurre avec des épices et des tomates."
+      },
+      {
+        "nom": "Bandera Paisa",
+        "cuisine": "Colombienne",
+        "ingredients": [
+          "riz",
+          "haricots",
+          "viande de porc",
+          "œuf",
+          "avocat",
+          "arepa"
+        ],
+        "preparation": "Servir le riz, les haricots, la viande de porc, l'œuf, l'avocat et l'arepa."
+      },
+      {
+        "nom": "Arroz Con Pollo",
+        "cuisine": "Colombienne",
+        "ingredients": [
+          "riz",
+          "poulet",
+          "légumes",
+          "épices"
+        ],
+        "preparation": "Cuire le riz avec le poulet, les légumes et les épices."
+      },
+      {
+        "nom": "Arroz Paisa",
+        "cuisine": "Colombienne",
+        "ingredients": [
+          "riz",
+          "haricots",
+          "viande",
+          "légumes"
+        ],
+        "preparation": "Servir le riz avec des haricots, de la viande et des légumes."
+      },
+      {
+        "nom": "Boeuf Bourguignon",
+        "cuisine": "Française",
+        "ingredients": [
+          "bœuf",
+          "vin rouge",
+          "légumes",
+          "champignons"
+        ],
+        "preparation": "Faire braiser le bœuf dans le vin rouge avec des légumes et des champignons."
+      },
+      {
+        "nom": "Gratin de Finlande",
+        "cuisine": "Française",
+        "ingredients": [
+          "pommes de terre",
+          "crème",
+          "fromage"
+        ],
+        "preparation": "Cuire les pommes de terre dans de la crème et du fromage pour un gratin."
+      },
+      {
+        "nom": "Confit de Canard",
+        "cuisine": "Française",
+        "ingredients": [
+          "canard",
+          "graisse de canard",
+          "épices"
+        ],
+        "preparation": "Cuisiner lentement le canard dans sa propre graisse pour un résultat tendre et croustillant."
+      },
+      {
+        "nom": "Pizza",
+        "cuisine": "Italienne",
+        "ingredients": [
+          "pâte",
+          "sauce tomate",
+          "fromage",
+          "autres ingrédients au choix"
+        ],
+        "preparation": "Garnir la pâte avec de la sauce tomate et du fromage, puis cuire au four."
+      },
+      {
+        "nom": "Pâtes Carbonara",
+        "cuisine": "Italienne",
+        "ingredients": [
+          "spaghetti",
+          "œufs",
+          "fromage Pecorino",
+          "guanciale",
+          "poivre"
+        ],
+        "preparation": "Cuire les pâtes et mélanger avec une sauce à base d'œufs, de fromage et de guanciale."
+      },
+      {
+        "nom": "Lasagne",
+        "cuisine": "Italienne",
+        "ingredients": [
+          "pâtes",
+          "viande hachée",
+          "béchamel",
+          "fromage"
+        ],
+        "preparation": "Alterner les couches de pâtes, de viande hachée, de béchamel et de fromage avant de cuire au four."
+      },
+      {
+        "nom": "Paella",
+        "cuisine": "Espagnole",
+        "ingredients": [
+          "riz",
+          "fruits de mer",
+          "poulet",
+          "légumes",
+          "safran"
+        ],
+        "preparation": "Cuire le riz avec les fruits de mer, le poulet, les légumes et le safran."
+      },
+      {
+        "nom": "Tortilla de Patata",
+        "cuisine": "Espagnole",
+        "ingredients": [
+          "pommes de terre",
+          "œufs"
+        ],
+        "preparation": "Faire frire les pommes de terre puis les mélanger avec les œufs pour une omelette épaisse."
+      },
+      {
+        "nom": "Jamon Serrano",
+        "cuisine": "Espagnole",
+        "ingredients": [
+          "jambon sec"
+        ],
+        "preparation": "Servir en tranches fines."
+      },
+      {
+        "nom": "Chicken Butter",
+        "cuisine": "Bangladaise",
+        "ingredients": [
+          "poulet",
+          "beurre",
+          "épices",
+          "tomates"
+        ],
+        "preparation": "Cuire le poulet dans une sauce crémeuse au beurre avec des épices."
+      },
+      {
+        "nom": "Lentille Curry (Daal)",
+        "cuisine": "Bangladaise",
+        "ingredients": [
+          "lentilles",
+          "épices",
+          "tomates"
+        ],
+        "preparation": "Faire cuire les lentilles dans un curry épicé."
+      },
+      {
+        "nom": "Samossa",
+        "cuisine": "Bangladaise",
+        "ingredients": [
+          "pâte",
+          "légumes",
+          "épices"
+        ],
+        "preparation": "Farcir la pâte avec des légumes épicés puis frire."
+      }
+    ]
+  }
+  

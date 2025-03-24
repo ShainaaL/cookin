@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+/* App.css */
+body {
+  font-family:'Inknut Antiqua', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F2;
+}
+
+/* Container principal du Header */
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur de l'en-tête */
+header .container {
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments sur les bords */
+  align-items: center; /* Centre verticalement les éléments */
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+header .logo {
+  height: 32px; /* Ajuste la taille du logo */
+}
+
+/* Menu de navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Espacement entre les éléments du menu */
+}
+
+/* Liens du menu */
+nav a {
+  color: #949F85;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Effet de survol */
+nav a:hover {
+  color: #C4B5FD; /* Couleur pour le survol */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50%;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+  border: 2px solid #ccc;
+  border-radius: 12px; /* Coins arrondis */
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button, select {
+  width: 50%;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+  border: 2px solid #ccc;
+  border-radius: 12px; /* Coins arrondis */
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+a:hover {
+  text-decoration: none; /* Supprime aussi le soulignement au survol */
+}
+
+a:visited {
+  color: black; /* Les liens visités resteront blancs */
+}
+
+.container_a {
+  width: 50%;
+}
