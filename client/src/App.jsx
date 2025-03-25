@@ -16,7 +16,6 @@ import ProfilePage from './pages/ProfilePage';
 import NotFoundPage from './pages/NotFoundPage';
 import FavoritesPage from './pages/FavoritesPage'
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
 import LegalPage from './pages/LegalPage';
 import UpdateEmailPage from './pages/UpdateEmailPage';
 
@@ -42,7 +41,6 @@ function App() {
             <Route path="continent/:id" element={<ContinentPage />} />
             <Route path="recipes/:id" element={<RecipePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
             <Route path="/legal" element={<LegalPage />} />
             <Route path="login" element={<LoginPage />} />
             <Route path="register" element={<RegisterPage />} />

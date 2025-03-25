@@ -80,20 +80,25 @@ const ProfilePage = () => {
     fetchUserComments();
   }, []);
 
-  const handleUpdateEmail = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.put('http://localhost:5001/api/profile/update-email', {
-        userId: user.id, // Utilise l'ID de l'utilisateur
-        newEmail
-      });
-
-      setMessage(response.data.message); // Affiche un message de succès
-    } catch (error) {
-      console.error("Erreur lors de la mise à jour de l'email :", error);
-      setMessage(error.response?.data?.error || "Une erreur est survenue.");
-    }
-  };
+  useEffect(() => {
+    const updateUserData = async () => {
+      const token = localStorage.getItem('token'); // Récupère le token pour l'authentification
+  
+      if (token) {
+        try {
+          const response = await axios.get('http://localhost:5001/api/users/profile', {
+            headers: { Authorization: `Bearer ${token}` },
+          });
+          setUser(response.data); // Mets à jour l'état utilisateur
+        } catch (err) {
+          console.error('Erreur lors de la récupération des données utilisateur mises à jour :', err);
+        }
+      }
+    };
+  
+    updateUserData(); // Récupère les données mises à jour
+  }, []);
+  
 
   if (loading) {
     return (

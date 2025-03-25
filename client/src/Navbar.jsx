@@ -7,7 +7,6 @@ function Navbar() {
       <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
         <li><Link to="/" style={{ color: "white", textDecoration: "none" }}>Accueil</Link></li>
         <li><Link to="/about" style={{ color: "white", textDecoration: "none" }}>À propos</Link></li>
-        <li><Link to="/contact" style={{ color: "white", textDecoration: "none" }}>Contact</Link></li>
       </ul>
     </nav>
   );

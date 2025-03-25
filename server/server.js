@@ -37,8 +37,6 @@ app.use('/api/users', userRoutes);
 app.use('/api', require('./routes/recipe.js'));
 app.use('/api', continentRoutes);
 
-
-
 // Route par défaut
 app.get('/', (req, res) => {
   res.send('API Cookin est en ligne!');

@@ -9,20 +9,29 @@ const UpdateEmailPage = ({ user }) => {
 
   const handleUpdateEmail = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await axios.put('http://localhost:5001/api/update-email', {
-        userId: user.id, // L'ID de l'utilisateur connecté
+      const token = localStorage.getItem('token'); // Récupère le token depuis le localStorage
+  
+      // Appelle l'API avec les en-têtes d'authentification
+      const response = await axios.put('http://localhost:5001/api/users/update-email', {
+        userId: user.id,
         newEmail,
+      }, {
+        headers: {
+          Authorization: `Bearer ${token}`, // Ajoute le token au header
+        },
       });
-
+  
       setMessage(response.data.message); // Message de succès
-      setTimeout(() => navigate('/profile'), 2000); // Redirige vers la page profil après mise à jour
+      setTimeout(() => navigate('/profile'), 2000); // Redirige après mise à jour
     } catch (error) {
       console.error("Erreur lors de la mise à jour de l'email :", error);
       setMessage(error.response?.data?.error || "Une erreur est survenue.");
     }
   };
+  
+  
 
   // Vérifie si l'utilisateur n'est pas connecté
   if (!user) {

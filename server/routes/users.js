@@ -125,9 +125,7 @@ router.get('/profile', authenticateUser, (req, res) => {
   });
 });
 
-
-router.put('/update-email', (req, res) => {
-  console.log("Requête reçue :", req.body);
+router.put('/update-email', authenticateUser, (req, res) => {
   const { userId, newEmail } = req.body;
 
   if (!userId || !newEmail) {
@@ -135,14 +133,15 @@ router.put('/update-email', (req, res) => {
   }
 
   const query = 'UPDATE utilisateurs SET email = ? WHERE id = ?';
-  db.query(query, [newEmail, userId], (err, results) => {
+  db.query(query, [newEmail, userId], (err, result) => {
     if (err) {
-      console.error("Erreur SQL :", err);
-      return res.status(500).json({ error: "Erreur serveur, veuillez réessayer plus tard." });
+      console.error('Erreur SQL lors de la mise à jour de l\'email :', err);
+      return res.status(500).json({ error: 'Erreur serveur, veuillez réessayer plus tard.' });
     }
 
-    if (results.affectedRows === 0) {
-      return res.status(404).json({ error: "Utilisateur introuvable." });
+    // Vérifie si une ligne a été mise à jour
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ error: "Utilisateur non trouvé." });
     }
 
     res.status(200).json({ message: "Email mis à jour avec succès." });
@@ -150,3 +149,4 @@ router.put('/update-email', (req, res) => {
 });
 
 module.exports = router;
+

@@ -89,20 +89,6 @@ const RegisterPage = () => {
                             required
                         />
                     </div>
-                    <div>
-                        <label htmlFor="role" className="block text-gray-700 font-medium">Rôle </label>
-                        <select 
-                            name="role" 
-                            value={formData.role} 
-                            onChange={handleChange} 
-                            className="input-field"
-                            required
-                        >
-                            <option value="">Sélectionnez un rôle</option> {/* 🚨 Option vide pour forcer le choix */}
-                            <option value="user">Utilisateur</option>
-                            <option value="admin">Administrateur</option>
-                        </select>
-                    </div>
                     <br />
                     <button type="submit">S'inscrire</button>
                 </form>

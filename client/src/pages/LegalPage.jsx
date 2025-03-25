@@ -2,7 +2,7 @@ import React from 'react';
 
 const LegalPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8 text-center">
+    <div className="container_a">
       {/* Titre centré */}
       <h1 className="text-2xl font-bold mb-8">Mentions légales</h1>
 

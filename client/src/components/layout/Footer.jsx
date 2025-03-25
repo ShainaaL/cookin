@@ -57,10 +57,6 @@ const Footer = () => {
                 className="text-white hover:text-indigo-300 no-underline"
               > Le Chef </Link>
               <Link 
-                to="/contact" 
-                className="text-white hover:text-indigo-300 no-underline"
-              > Contact </Link>
-              <Link 
                 to="/legal" 
                 className="text-white hover:text-indigo-300 no-underline"
               > Mentions légales </Link>

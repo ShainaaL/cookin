@@ -6,6 +6,7 @@ import Loader from '../components/common/Loader';
 import CommentForm from '../components/common/CommentForm'; // Formulaire pour ajouter un commentaire
 import CommentList from '../components/common/CommentList'; // Liste des commentaires
 
+
 const ContinentPage = () => {
   const { id } = useParams(); // ID du continent depuis l'URL
   const [continent, setContinent] = useState(null);

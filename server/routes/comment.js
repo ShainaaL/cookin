@@ -134,7 +134,14 @@ router.post('/api/comments/continent', authenticateUser, (req, res) => {
 });
 
 router.post('/api/comments/recipe', authenticateUser, (req, res) => {
+  console.log('Données reçues :', req.body);
   const { id_recette, contenu } = req.body;
+
+  if (!id_recette || !contenu) {
+    console.error('Erreur : Données manquantes');
+    return res.status(400).json({ error: "L'ID de la recette et le contenu sont requis." });
+  }
+
   const userId = req.user.id;
 
   const query = `
@@ -144,13 +151,13 @@ router.post('/api/comments/recipe', authenticateUser, (req, res) => {
 
   db.query(query, [userId, id_recette, contenu], (err) => {
     if (err) {
-      console.error('Erreur SQL lors de l\'ajout du commentaire :', err);
-      res.status(500).json({ error: 'Erreur lors de l\'ajout du commentaire.' });
-    } else {
-      res.status(201).json({ message: 'Commentaire ajouté avec succès.' });
+      console.error('Erreur SQL :', err);
+      return res.status(500).json({ error: 'Erreur lors de l\'ajout du commentaire.' });
     }
+    res.status(201).json({ message: 'Commentaire ajouté avec succès.' });
   });
 });
+
 
 
 module.exports = router;
