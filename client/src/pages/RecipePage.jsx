@@ -147,7 +147,7 @@ const instructionsList = recipe.instructions
         <img
           src={recipe.photo_url}
           alt={recipe.titre}
-          style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', borderRadius: '8px' }}
+          style={{ width: '100%', maxHeight: '300px', objectFit: 'cover', borderRadius: '8px' }}
           className="w-full h-96 object-cover rounded-lg"
         />
         
