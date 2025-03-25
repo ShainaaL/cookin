@@ -9,6 +9,8 @@ const ProfilePage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const [newEmail, setNewEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   // Récupérer les informations utilisateur
   useEffect(() => {
@@ -78,6 +80,21 @@ const ProfilePage = () => {
     fetchUserComments();
   }, []);
 
+  const handleUpdateEmail = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.put('http://localhost:5001/api/profile/update-email', {
+        userId: user.id, // Utilise l'ID de l'utilisateur
+        newEmail
+      });
+
+      setMessage(response.data.message); // Affiche un message de succès
+    } catch (error) {
+      console.error("Erreur lors de la mise à jour de l'email :", error);
+      setMessage(error.response?.data?.error || "Une erreur est survenue.");
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -114,8 +131,19 @@ const ProfilePage = () => {
           <div className="border-b pb-2">
             <p className="text-gray-600">Email</p>
             <p className="font-semibold">{user.email}</p>
+            <button
+        onClick={() => navigate('/update-email')}
+        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
+      >
+        Modifier l'email
+      </button>
           </div>
         </div>
+        <div className="container mx-auto py-10">
+      
+      <p>Email actuel : {user.email}</p>
+      
+    </div>
 
         {/* Bouton déconnexion */}
         <div className="flex justify-center mt-6">

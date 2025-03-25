@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider, useAuth } from './context/AuthContext';
 import './App.css';
 
 import MainLayout from './components/layout/MainLayout';
@@ -18,6 +18,7 @@ import FavoritesPage from './pages/FavoritesPage'
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import LegalPage from './pages/LegalPage';
+import UpdateEmailPage from './pages/UpdateEmailPage';
 
 // Pages admin
 import AdminDashboard from './pages/admin/DashboardPage';
@@ -30,6 +31,7 @@ import PrivateRoute from './components/routes/PrivateRoute';
 import AdminRoute from './components/routes/AdminRoute';
 
 function App() {
+  const {user} = useAuth();
   return (
     <AuthProvider>
       <Router>
@@ -49,6 +51,7 @@ function App() {
                 <ProfilePage />
               </PrivateRoute>
             } />
+            <Route path="/update-email" element={<UpdateEmailPage user={user} />} />
             <Route path="/favorites" element={
               <PrivateRoute>
                 <FavoritesPage />

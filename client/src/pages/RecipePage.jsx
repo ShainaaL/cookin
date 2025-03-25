@@ -152,7 +152,7 @@ const instructionsList = recipe.instructions
         />
         
         <div className="absolute top-4 right-4 flex space-x-2">
-          <button
+          <button 
             onClick={toggleFavorite}
             className={`p-3 rounded-full ${
               isFavorite 
@@ -162,7 +162,7 @@ const instructionsList = recipe.instructions
             disabled={!user}
             title={user ? 'Ajouter/retirer des favoris' : 'Connectez-vous pour ajouter aux favoris'}
           >
-            <i className={`fas fa-heart ${isFavorite ? 'text-white' : ''}`} />
+            <i className={`fas fa-heart ${isFavorite ? 'text-white' : ''}`} />Ajouter aux favoris
           </button>
         </div>
       </div>
