@@ -82,18 +82,18 @@ INSERT INTO continents (nom) VALUES
 ('Océanie');
 
 INSERT INTO recettes_continents (recette_id, continent_id) VALUES
-(27, 3), -- Mafé (Sénégal - Afrique)
-(28, 3), -- Yassa Poulet (Sénégal - Afrique)
-(29, 3), -- Couscous (Maroc - Afrique)
-(30, 3), -- Mlawi (Maghreb - Afrique)
-(31, 4), -- Fritay (Haïti - Amérique)
-(32, 4), -- Candinga (Honduras - Amérique)
-(33, 4), -- Tapado (Guatemala - Amérique)
-(34, 4), -- Riz Djondjon (Haïti - Amérique)
-(35, 4), -- Soupe Joumou (Haïti - Amérique)
-(36, 6), -- Sapasui (Samoa - Océanie)
-(37, 6), -- Meat Pies (Australie et Nouvelle-Zélande - Océanie)
-(38, 6); -- Kokoda (Fidji - Océanie)
+(27, 3), 
+(28, 3), 
+(29, 3), 
+(30, 3), 
+(31, 4), 
+(32, 4), 
+(33, 4), 
+(34, 4), 
+(35, 4), 
+(36, 6), 
+(37, 6), 
+(38, 6); 
 
 
 INSERT INTO commentaires (id, contenu, id_utilisateur, id_recette, id_continent, date_creation, status, date_modification, is_visible) VALUES
